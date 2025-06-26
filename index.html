@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <!-- بهینه‌سازی متا تگ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>هتل عشاق الرضا | هتل مشهد ، اقامتگاه ، هتل نزدیک حرم</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- صفحه اصلی -->
+    <main class="container">
+        <h1 class="title">هتل عشاق الرضا</h1>
+        <p class="subtitle">لحظاتی خوش در جوار حرم حضرت رضا (ع)</p>
+
+        <div class="btn-group">
+            <button class="glass-btn" data-tab="rooms">
+                <i class="fas fa-bed"></i> اتاق‌ها
+            </button>
+            <button class="glass-btn" data-tab="gallery">
+                <i class="fas fa-images"></i> گالری
+            </button>
+            <button class="glass-btn" data-tab="menu">
+                <i class="fas fa-utensils"></i> منوی غذایی
+            </button>
+            <button class="glass-btn" data-tab="contact">
+                <i class="fas fa-phone-alt"></i> تماس
+            </button>
+        </div>
+    </main>
+
+    <!-- صفحه اتاق‌ها -->
+    <div class="tab-content" id="rooms">
+        <button class="back-btn"><i class="fas fa-arrow-right"></i> برگشت</button>
+        <h2>اتاق‌های هتل</h2>
+        <div class="room-card">
+            <img src="room1.jpg" alt="اتاق استاندارد" style="width:100%; max-width:300px; border-radius:10px; margin:20px 0;">
+            <h3>اتاق استاندارد</h3>
+            <p>امکانات: وای‌فای رایگان، تلویزیون، سرویس روزانه</p>
+            <button class="glass-btn" style="margin-top:15px;">رزرو کنید</button>
+        </div>
+    </div>
+
+    <!-- صفحه گالری -->
+    <div class="tab-content" id="gallery">
+        <button class="back-btn"><i class="fas fa-arrow-right"></i> برگشت</button>
+        <h2>گالری تصاویر</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap:15px; margin:20px 0;">
+            <img src="gallery1.jpg" alt="هتل" style="width:100%; border-radius:8px;">
+            <img src="gallery2.jpg" alt="هتل" style="width:100%; border-radius:8px;">
+            <img src="gallery3.jpg" alt="هتل" style="width:100%; border-radius:8px;">
+        </div>
+    </div>
+
+    <!-- صفحه تماس -->
+        <div class="tab-content contact-page" id="contact">
+            <button class="back-btn"><i class="fas fa-arrow-right"></i> برگشت</button>
+
+            <div class="contact-container">
+                <!-- ستون سمت چپ - فرم -->
+                <div class="contact-left">
+                    <div class="contact-form">
+                        <h2><i class="fas fa-paper-plane"></i> ارسال پیام</h2>
+                        <form>
+                            <div class="form-group">
+                                <label for="name">نام کامل:</label>
+                                <input type="text" id="name" placeholder="نام و نام خانوادگی" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">تلفن همراه:</label>
+                                <input type="tel" id="phone" placeholder="09xxxxxxxxx">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">متن پیام:</label>
+                                <textarea id="message" rows="5" placeholder="متن پیام شما..." required></textarea>
+                            </div>
+                            <button type="submit" class="glass-btn submit-btn">
+                                <i class="fas fa-paper-plane"></i> ارسال پیام
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- ستون سمت راست - اطلاعات -->
+                <div class="contact-right">
+                    <div class="contact-info">
+                        <h2><i class="fas fa-info-circle"></i> اطلاعات تماس</h2>
+
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h3>آدرس هتل</h3>
+                                <p>مشهد، خیابان اما رضا 1، شهید پور نظری 7</p>
+                                <a href="https://nshn.ir/1d_b1Gxj2Jjmxh" class="map-link">مشاهده روی نقشه <i class="fas fa-map-marked-alt"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h3>تلفن‌های تماس</h3>
+                                <p>رزرواسیون: <span>021-12345678</span></p>
+                                <p>پذیرش: <span>021-87654321</span></p>
+                            </div>
+                        </div>
+
+                        <div class="social-section">
+                            <h3>ما را در شبکه‌های اجتماعی دنبال کنید:</h3>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-telegram"></i></a>
+                                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- صفحه منوی غذایی -->
+    <div class="tab-content" id="menu">
+        <button class="back-btn" aria-label="بازگشت">
+            <i class="fas fa-arrow-right"></i>
+            <span class="btn-text">برگشت</span>
+        </button>
+        <div class="menu-app">
+            <div class="day-selector"></div>
+            <div class="menu-container"></div>
+          </div>
+    </div>
+
+    <!-- فوتر -->
+    <footer class="glass-footer">
+        <p>© تمامی حقوق این وبسایت متعلق به هتل عشاق الرضا (ع) میباشد</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>
